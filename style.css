@@ -2,7 +2,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('ai\ image.avif') no-repeat center center fixed;
+    background: url('ai image.avif') no-repeat center center fixed;
     background-size: cover;
     color: #594786;
 }
@@ -27,11 +27,12 @@ header {
     color: #fff;
     border-radius: 10px 10px 0 0;
 }
-@media(max-width:500px){
-    header,header img,.home-button{
+
+@media(max-width: 500px) {
+    header, header img, .home-button {
         display: flex;
         flex-direction: column;
-        width:auto
+        width: auto;
     }
 }
 
@@ -160,7 +161,7 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
     header .home-button {
         font-size: 14px;
         padding: 8px 16px;
@@ -185,12 +186,11 @@ footer a:hover {
     text-decoration: none;
     color: white;
 }
+
 /* Center the button and style it */
 .github-button {
-    display: block;
-    margin: 20px auto;
     padding: 10px 20px;
-    background-color: #3498db;;
+    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
@@ -199,10 +199,18 @@ footer a:hover {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
+    margin: 10px;
 }
 
 .github-button:hover {
-    background-color: #3498db;
+    background-color: #2980b9;
 }
 
+/* Flex container for buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons if there is not enough space */
+}
